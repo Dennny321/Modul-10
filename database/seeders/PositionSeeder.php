@@ -30,5 +30,7 @@ class PositionSeeder extends Seeder
                 'description' => 'System Analist'
             ],
         ]);
+
+        \App\Models\Position::factory()->count(10)->create();
     }
 }

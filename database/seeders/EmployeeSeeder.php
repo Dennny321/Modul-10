@@ -36,5 +36,7 @@ class EmployeeSeeder extends Seeder
                 'position_id' => 3
             ],
         ]);
+
+        \App\Models\Employee::factory()->count(20)->create();
     }
 }
